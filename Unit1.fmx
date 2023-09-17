@@ -1,0 +1,109 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Z'
+  ClientHeight = 350
+  ClientWidth = 634
+  Fill.Color = xFFA1EBCF
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Question_Label: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 48.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Arial Rounded MT'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Question_Label'
+    TabOrder = 0
+  end
+  object Answer1_Button: TRadioButton
+    StyledSettings = [FontColor]
+    Position.X = 48.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Answer1_Button'
+    TextSettings.Font.Family = 'Arial Rounded MT'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnChange = Answer1_ButtonChange
+  end
+  object Answer2_Button: TRadioButton
+    StyledSettings = [FontColor]
+    Position.X = 48.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Answer2_Button'
+    TextSettings.Font.Family = 'Arial Rounded MT'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnChange = Answer2_ButtonChange
+  end
+  object Answer3_Button: TRadioButton
+    StyledSettings = [FontColor]
+    Position.X = 48.000000000000000000
+    Position.Y = 230.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Answer3_Button'
+    TextSettings.Font.Family = 'Arial Rounded MT'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnChange = Answer3_ButtonChange
+  end
+  object SelectAnswer: TButton
+    Position.X = 256.000000000000000000
+    Position.Y = 151.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Confirm'
+    OnClick = SelectAnswerClick
+  end
+  object NumberOfPoints: TLabel
+    StyledSettings = []
+    Position.X = 488.000000000000000000
+    Position.Y = 40.000000000000000000
+    TextSettings.Font.Family = 'Arial Rounded MT'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'NumberOfPoints'
+    TabOrder = 5
+  end
+  object Points: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 376.000000000000000000
+    Position.Y = 40.000000000000000000
+    TextSettings.Font.Family = 'Arial Rounded MT'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Points:'
+    TabOrder = 6
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 392.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 216.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
